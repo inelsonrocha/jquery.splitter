@@ -28,6 +28,7 @@
 .splitter_panel .hsplitter, .splitter_panel .top_panel, .splitter_panel .bottom_panel {
     position: absolute;
     overflow: auto;
+    box-sizing: border-box;
 }
 .splitter_panel .vsplitter, .splitter_panel .left_panel, .splitter_panel .right_panel {
   height: 100%;
