@@ -106,11 +106,11 @@
                             var sw2 = sw/2;
                             if (settings.invisible) {
                                 var pw = panel_1.width(position).outerWidth();
-                                panel_2.width(self.width()-pw);
+                                panel_2.width(self.width() - pw - (panel_2.outerWidth() - panel_2.width()));
                                 splitter.css('left', pw-sw2);
                             } else {
                                 var pw = panel_1.width(position-sw2).outerWidth();
-                                panel_2.width(self.width()-pw-sw);
+                                panel_2.width(self.width() - pw - sw - (panel_2.outerWidth() - panel_2.width()));
                                 splitter.css('left', pw);
                             }
                         }
@@ -129,11 +129,11 @@
                             var sw2 = sw/2;
                             if (settings.invisible) {
                                 var pw = panel_1.height(position).outerHeight();
-                                panel_2.height(self.height()-pw);
+                                panel_2.height(self.height() - pw - (panel_2.outerHeight() - panel_2.height()));
                                 splitter.css('top', pw-sw2);
                             } else {
                                 var pw = panel_1.height(position-sw2).outerHeight();
-                                panel_2.height(self.height()-pw-sw);
+                                panel_2.height(self.height() - pw - sw - (panel_2.outerHeight() - panel_2.height()));
                                 splitter.css('top', pw);
                             }
                         }
